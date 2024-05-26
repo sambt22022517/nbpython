@@ -10,9 +10,9 @@ if $(hdfs dfs -test -d $output_folder/out_pred) ; then hdfs dfs -rm -r $output_f
 mapred streaming \
         -file $pred_home/mapper_pred.py \
         -file $pred_home/reducer_pred.py \
-        -mapper mapper_pred.py \
-        -reducer reducer_pred.py \
-        -cacheFile /output/out_conditional/part-00000#conditional \
-        -cacheFile /output/out_prior2/part-00000#prior \
+        -mapper $pred_home/mapper_pred.py \
+        -reducer $pred_home/reducer_pred.py \
+        -cacheFile $output_folder/out_conditional/part-00000#conditional \
+        -cacheFile $output_folder/out_prior2/part-00000#prior \
         -input $input_file \
         -output $output_folder/out_pred
