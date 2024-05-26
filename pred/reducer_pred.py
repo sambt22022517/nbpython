@@ -64,4 +64,4 @@ for k,v in Posterior.items():
     pred_labels.append(l[pro.index(max(pro))])   
 
 for i in range(len(pred_labels)):
-    print(f'{"pos" if pred_labels[i] == 1 else "neg"}\t{texts[i]}')
+    print(f'{pred_labels[i]}\t{texts[i]}')
