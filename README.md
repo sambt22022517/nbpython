@@ -15,7 +15,7 @@
    hdfs dfs -mkdir /output
    ```
 3. Chạy train, test, pred \
-   Cú pháp chạy cả 3 ý hệt nhau: `sh <type>/<type>.sh <type_home> <hdfs_input_file> <hdfs_output_folder>` \
+   Cú pháp chạy cả 3 ý hệt nhau: `sh <type>/<type>.sh <parent_folder_of_type.sh> <hdfs_input_file> <hdfs_output_folder>` \
    Với cả 3 file nếu chuẩn bị file đúng như 2 thì:
    ```
    sh train/train.sh train /input/train.txt /output
