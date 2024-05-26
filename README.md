@@ -18,9 +18,9 @@
    Cú pháp chạy cả 3 ý hệt nhau: `sh <type>/<type>.sh <type_home> <hdfs_input_file> <hdfs_output_folder>` \
    Với cả 3 file nếu chuẩn bị file đúng như 2 thì:
    ```
-   sh train/train.sh ~/train /input/train.txt /output
-   sh test/test.sh ~/test /input/test.txt /output
-   sh pred/pred.sh ~/pred /input/pred.txt /output
+   sh train/train.sh train /input/train.txt /output
+   sh test/test.sh test /input/test.txt /output
+   sh pred/pred.sh pred /input/pred.txt /output
    ```
    ***Không biết sao, nhưng phải chạy ở parent_folder của `train`, `test`, `pred` thì mới được, nên là chú ý nha!!!***
 5. Xem kết quả \
